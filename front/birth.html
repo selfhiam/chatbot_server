@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/birth.css">
+</head>
+
+<body>
+    <header>
+        <a href="./naming.html"><i class="xi-angle-left-min"></i></a>
+        <p>챗쪽이 탄생</p>
+    </header>
+    <div class="container">
+        <div class="pic">
+            <div class="firework">
+                <img src="./logo/firework.gif" alt="firework">
+            </div>
+            <div class="char">
+            </div>
+        </div>
+        <div class="ment">
+            <span class="name">엄쪽이 </span>(이)가 탄생했어요!
+            <p>나이: 7세</p>
+        </div>
+        <div class="subment">
+            학교에 다녀온 <span class="cname">엄쪽이</span>(이)와<br>대화를 나눠보세요!
+        </div>
+    </div>
+    <button class="button" type="button" onclick="select()">
+        챗쪽이 만나러 가기
+    </button>
+    <div class="layer">
+        <div class="popup">
+            <i class="xi-close-min"></i>
+            <ul>
+                <label>
+                <input type="radio" name="parents" value="1">엄마</label>
+                <label>
+                <input type="radio" name="parents" value="2">아빠</label>                
+            </ul>
+            <div class="enter" onclick="enter()">입장하기</div>
+        </div>
+    </div>
+</body>
+<script src="./js/birth.js"></script>
+</html>

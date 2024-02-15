@@ -1,0 +1,23 @@
+.pick {
+    background-color: #FFF3CA;
+    width: 50%;
+    padding: 0 1rem ;
+    margin: 5rem auto 1rem auto;
+    border-radius: 0.75rem;
+}
+
+.pick img {
+    width: 100%;
+}
+
+.container p {
+    color: #999999;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 4rem;
+}
+
+.button {
+    background-color: #443400;
+    color: white;
+}

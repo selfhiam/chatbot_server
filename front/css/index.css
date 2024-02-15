@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: 5rem auto 3rem auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo p {
+    position: absolute;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #999999;
+    top: 50%;
+    width: 100%;
+    transform: translateY(150%);
+}
+
+.button {
+    background-color: #443400;
+    color: white;
+}

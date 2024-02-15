@@ -1,0 +1,19 @@
+.num {
+    color: #999999;
+    margin-top: 4rem;
+}
+
+.change {
+    color: #FFBD00;
+}
+
+.question {
+    font-size: 1.75rem;
+    margin: 0.5rem 0 2.5rem 0;
+    color: #443400;
+}
+
+.button {
+    background-color: #FFBD00;
+    color: white;
+}

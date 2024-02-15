@@ -1,0 +1,89 @@
+html {
+    font-size: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'yg-jalnan';
+}
+
+a {
+    text-decoration: none;
+    color: #FFBD00;
+}
+
+.brown{
+    color: #443400;
+}
+
+.yellow{
+    color: #FFBD00;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    padding: 1.8rem 0 1rem;
+    color: #FFBD00;
+    left: 0;
+    top: 0;
+    background: #fff;
+}
+
+header i {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+header p {
+    font-family: 'yg-jalnan';
+    margin: auto;
+}
+
+.button {
+    width: 100%;
+    padding: 0.9rem 0;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    margin: 0.8rem 0;
+    color: #443400;
+    border: none;
+}
+
+@media screen and (max-width:380px) {
+    html{font-size: 16px;}
+}
+@media screen and (min-width:380px) and (max-width:512px){
+    html{font-size: 20px;}
+}
+@media screen and (min-width:512px) and (max-width:768px){
+    html{font-size: 23px;}
+} 
+@media screen and (min-width:768px){
+    html{font-size: 25px;}
+} 

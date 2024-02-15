@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+}
+
+header, .container {
+    width: 80%;
+    margin: auto;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+footer {
+    padding: 0.8rem 0 2rem 0;
+    /* border-top: 2px solid #E8E8E8; */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.footer {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i {
+    font-size: 1.2rem;
+    top: 50%;
+    color: white;
+}
+
+footer textarea {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.5rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 2px solid #ffbd00;
+    outline: none;
+}
+
+footer button {
+    width: min-content;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: #E8E8E8;
+    border: none;
+    padding: 0 0.2rem;
+    align-self: self-end;
+}
+
+.yellow {
+    background-color: #ffbd00;
+}
+
+.text {
+    font-size: 0.8rem;
+    display: flex;
+}
+
+.time {
+    margin: 0 0.2rem;
+    align-self: self-end;
+    font-size: 0.5rem;
+}
+
+.align {
+    display: flex;
+    margin-left: auto;
+    padding: 1.8rem 0;
+}
+
+.mytext {
+    width: 100%;
+}
+
+.mytext div {
+    white-space: pre-line;
+    width: fit-content;
+    padding: 0.5rem 0.7rem;
+    background-color:  #443400;
+    color: white;
+    border-radius: 0.75rem;
+    border-top-right-radius: 0; 
+    word-break: break-all;
+}
+
+.yourtext {
+    width: 100%;
+    display: flex;
+}
+
+.yourtext div{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 0.7rem;
+    margin: 1.5rem 0 0 0.2rem;
+    background-color:  #FFF3CA;
+    color: #443400;
+    border-radius: 0.75rem;
+    border-top-left-radius: 0;
+    word-break: break-all;
+}
+.character {
+    width: 2rem;
+    height: fit-content;
+    border-radius: 50px;
+    padding: 0.3rem 0.25rem 0.05rem 0.25rem;
+    background-color: #E8E8E8;
+}
+
+.character img {
+    width: 100%;
+}

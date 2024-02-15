@@ -1,0 +1,134 @@
+.pic {
+    width: 90%;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.char {
+    width: 50%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.pic div {
+    margin: 0 auto;
+}
+
+.firework {
+    width: 100%;
+}
+
+.firework img {
+    width: 100%;
+}
+
+.char img {
+    width: 100%;
+    /* left: -50%; */
+}
+
+.container {
+    margin: 2rem 0;
+}
+
+.ment {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    background-color: #FFF3CA;
+    border-radius: 0.75rem;
+}
+
+.ment p {
+    margin: 0;
+}
+
+.subment {
+    font-family: 'Pretendard-Regular';
+    font-size: 0.9rem;
+    text-align: center;
+    color: #999999;
+    margin: 1.5rem;
+}
+
+.button {
+    color: white;
+    background-color: #443400;
+}
+
+.layer {
+    display: none;
+    position: absolute;
+    /* 시작 지점을 버튼 위, 0픽셀부터 시작하려고 주는 것*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(126, 126, 126, 0.5);
+    align-content: center;
+    vertical-align: middle;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 70%;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.75rem;
+}
+
+.popup i {
+    float: right;
+}
+
+ul {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter {
+    background-color: #FFBD00;
+    color: white;
+    font-size: 0.8rem;
+    width: 50%;
+    padding: 0.2rem;
+    border-radius: 0.75rem;
+    margin: 0 auto 0.5rem auto;
+    text-align: center;
+}
+
+[type="radio"] {
+    line-height: 0.8rem;
+    appearance: none !important;
+    border: max(1px, 0.1em) solid rgb(199, 199, 199);
+    border-radius: 0.15rem;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    position: relative;
+    vertical-align: text-bottom;
+}
+[type="radio"]:checked{
+    border-color: #FFBD00;
+}
+[type="radio"]:checked::after{
+    content: '✔';
+    position: absolute;
+    color: #FFBD00;
+    left: 50%;
+    top: 50%;
+    font-size: 0.8rem;
+     transform: translate(-50%, -50%);
+}

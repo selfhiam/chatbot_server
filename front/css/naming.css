@@ -1,0 +1,31 @@
+.container {
+    margin: 6rem 0 4rem 0;
+}
+
+.ment {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #443400;
+}
+
+.container p {
+    font-family: 'Pretendard-Regular';
+    font-size: 0.7rem;
+    color: #999999;
+}
+
+.container input {
+    margin: 2rem 0;
+    padding: 0.2rem;
+    width: 100%;
+    border-color: #FFBD00;
+    border-width: 0 0 0.1rem;
+    outline: none;
+    color: #FFBD00;
+    font-size: 1.8rem;
+}
+
+.button{
+    color: white;
+    background-color: #443400;
+}
