@@ -1,5 +1,5 @@
 /// python에서 뽑은 q, a 받아오기
-fetch('http://43.201.98.27:59671/mytest.html', {
+fetch('http://127.0.0.1/mytest.html', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
