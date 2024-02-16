@@ -6,7 +6,7 @@ localStorage.setItem('char', randomNum);
 const cname = localStorage.getItem('name');
 let subment = document.querySelector(".subment");
 
-fetch('http://43.201.98.27:59671/naming.html', {
+fetch('http://127.0.0.1/naming.html', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ function enter() {
     const parents = document.getElementsByName('parents')
     const selected = Array.from(parents).find(radio => radio.checked);
     console.log(selected.value)
-    fetch('http://43.201.98.27:59671/birth.html', {
+    fetch('http://127.0.0.1/birth.html', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
