@@ -11,7 +11,7 @@ import model
 app = FastAPI()
 
 origins = [
-    "http://127.0.0.1:8000"
+    "http://3.36.140.169:8000"
 ]
 
 app.add_middleware(
@@ -22,10 +22,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-templates = Jinja2Templates(directory='/workspace/chatjjock/front')
-app.mount("/js", StaticFiles(directory="/workspace/chatjjock/front/js"), name="js")
-app.mount("/css", StaticFiles(directory='/workspace/chatjjock/front/css'), name='css')
-app.mount("/logo", StaticFiles(directory='/workspace/chatjjock/front/logo'), name='img')
+templates = Jinja2Templates(directory='/root/chatbot_server/front')
+app.mount("/js", StaticFiles(directory="/root/chatbot_server/front/js"), name="js")
+app.mount("/css", StaticFiles(directory='/root/chatbot_server/front/css'), name='css')
+app.mount("/logo", StaticFiles(directory='/root/chatbot_server/front/logo'), name='img')
 
 @app.get('/', response_class=HTMLResponse)
 def main_page(request: Request):

@@ -1,4 +1,4 @@
-let cname = localStorage.getItem('name');
+const cname = localStorage.getItem('name');
 let changes = document.querySelector('.name');
 changes.innerText = cname;
 
@@ -98,7 +98,7 @@ async function submit() {
 
 function model(value) {
     return new Promise(resolve => {
-        fetch('http://127.0.0.1/chatting.html', {
+        fetch('http://3.36.140.169:8000/chatting.html', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

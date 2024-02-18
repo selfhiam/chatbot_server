@@ -1,7 +1,0 @@
-fastapi
-certifi
-uvicorn
-transformers
-pymongo
-pandas
-torch
