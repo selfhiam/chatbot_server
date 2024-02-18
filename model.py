@@ -48,11 +48,11 @@ class ChatbotDataset(Dataset):
         l = str(turn["1"])
 
         q = turn["Q"]  # 질문을 가져온다.
-        q = re.sub(r"([?.!,~])", r" ", q)  # 구둣점들을 제거한다.
+        q = re.sub(r"([.!,~])", r" ", q)  # 구둣점들을 제거한다.
         q = re.sub(r'([ㄱ-ㅎㅏ-ㅣ])\1+', r'\1', q) # 자음이나 모음만 연속되는 것 한개만 남기고 삭제
 
         a = turn["A"]  # 답변을 가져온다.
-        a = re.sub(r"([?.!,])", r" ", a)  # 구둣점들을 제거한다.
+        a = re.sub(r"([.!,])", r" ", a)  # 구둣점들을 제거한다.
         a = re.sub(r'([ㄱ-ㅎㅏ-ㅣ])\1+', r'\1', a) # 자음이나 모음만 연속되는 것 한개만 남기고 삭제
 
         l_toked = self.tokenizer.tokenize(self.l_token + l + self.sent_token)
