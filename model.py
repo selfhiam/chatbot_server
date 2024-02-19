@@ -26,7 +26,7 @@ model = GPT2LMHeadModel.from_pretrained('skt/kogpt2-base-v2')
 # 저장된 모델 상태를 불러오기
 checkpoint = torch.load('./chatjjock.pth', map_location=torch.device('cpu'))
 
-model.load_state_dict(checkpoint)
+model.load_state_dict(checkpoint['model_state_dict'])
 
 class ChatbotDataset(Dataset):
     def __init__(self, chats, max_len=50):  # 데이터셋의 전처리를 해주는 부분
@@ -106,8 +106,15 @@ class ChatbotDataset(Dataset):
         while len(token_ids) < self.max_len:
             token_ids += [self.tokenizer.pad_token_id]
 
-        #질문+답변, 마스크, 답변
-        return (token_ids, np.array(mask), labels_ids)
+        # 어텐션 마스크 생성
+        attention_mask = [1] * t_len + [1] * a_len + [0] * (self.max_len - t_len - a_len)
+
+        # 최대길이만큼 PADDING
+        while len(attention_mask) < self.max_len:
+            attention_mask += [0]  # 패딩된 토큰에는 0 할당
+
+        # 질문+답변, 어텐션 마스크, 답변 반환
+        return (token_ids, attention_mask, labels_ids)
 
 def Parents(parents):
     global parent
@@ -156,4 +163,3 @@ def getAnswer(question):
           a = re.sub(r"\s{2,}", "!", a)
         a = re.sub(r'([ㄱ-ㅎㅏ-ㅣᄒ])', r'\1\1', a)
         return a
-    
