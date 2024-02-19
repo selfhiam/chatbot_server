@@ -26,7 +26,7 @@ model = GPT2LMHeadModel.from_pretrained('skt/kogpt2-base-v2')
 # 저장된 모델 상태를 불러오기
 checkpoint = torch.load('./chatjjock.pth', map_location=torch.device('cpu'))
 
-model.load_state_dict(checkpoint['model_state_dict'])
+model.load_state_dict(checkpoint)
 
 class ChatbotDataset(Dataset):
     def __init__(self, chats, max_len=50):  # 데이터셋의 전처리를 해주는 부분
